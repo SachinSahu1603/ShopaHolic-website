@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopaHolic</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="index.html"
+        ><img
+          class="logo"
+          src="https://cdn6.f-cdn.com/contestentries/315705/16938251/56851f0974f19_thumb900.jpg"
+          alt="logo"
+      /></a>
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="cartbag">
+            <a href="cart.html"
+              ><img
+                class="cartpic"
+                src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
+                alt="cart"
+            /></a>
+          </li>
+          <a href="#" id="close">X</a>
+        </ul>
+        <div id="mobile">
+          <a href="cart.html"
+            ><img
+              class="cartpic"
+              src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
+              alt="cart"
+          /></a>
+          <i id="hamburger" class="fas fa-outdent"></i>
+        </div>
+      </div>
+    </section>
+    <section id="prodetails" class="section-p1">
+      <div class="singleproimage">
+        <img src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg" id="mainimg" width="100%" alt="img" />
+        <div class="smallimggroup">
+          <div class="smallimgcol">
+            <img
+              src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg"
+              class="smallimg"
+              width="100%"
+              alt="" />
+          </div>
+          <div class="smallimgcol" >
+            <img
+              src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg"
+              class="smallimg"
+              width="100%"
+              alt="" />
+          </div>
+          <div class="smallimgcol">
+            <img
+              src="https://m.media-amazon.com/images/I/61NGtyCS8sL._AC_UY1100_.jpg"
+              class="smallimg"
+              width="100%"
+              alt="" />
+          </div>
+          <div class="smallimgcol">
+            <img
+              src="https://images-cdn.ubuy.co.in/635d6cd31c8da04be10d4823-felgay-womens-zip-up-long-hoodie-jacket.jpg"
+              class="smallimg"
+              width="100%"
+              alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="singleprodetails">
+        <h6>Women's Jackets</h6>
+        <h4 class="smallimgtitle">Women's Leather Biker Jacket</h4>
+        <h2>INR 599</h2>
+        <select>
+          <option value="">select size</option>
+          <option value="">XL</option>
+          <option value="">XXL</option>
+          <option value="">small</option>
+          <option value="">large</option>
+        </select>
+        <input type="number" value="1" class="quantityinp" />
+        <button class="normal" onclick=handlefavourite()>Add to cart</button>
+        <h4>Product Details</h4>
+        <span class="smallimgdesc"
+          >   "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+ </span
+        >
+      </div>
+      </section>
+        <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="productcontainer">
+          <div class="prod">
+            <img src="img/products/f1.jpg" alt="f1" />
+            <div class="description">
+              <span>adidas</span>
+              <h5>Cartoon Bollywood Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>INR 599</h4>
+            </div>
+            <a href="#"
+              ><svg
+                class="cart"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 576 512">
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #505258;
+                  }
+                </style>
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" /></svg
+            ></svg></a>
+          </div>
+          <div class="prod">
+            <img src="img/products/f2.jpg" alt="f1" />
+            <div class="description">
+              <span>adidas</span>
+              <h5>Cartoon Bollywood Plazzos</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>INR 599</h4>
+            </div>
+            <a href="#"
+              ><svg
+                class="cart"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 576 512">
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #505258;
+                  }
+                </style>
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" /></svg
+            ></svg></a>
+          </div>
+          <div class="prod">
+            <img src="img/products/f3.jpg" alt="f1" />
+            <div class="description">
+              <span>adidas</span>
+              <h5>Cartoon Bollywood Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>INR 599</h4>
+            </div>
+            <a href="#"
+              ><svg
+                class="cart"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 576 512">
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #505258;
+                  }
+                </style>
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" /></svg
+            ></svg></a>
+          </div>
+          <div class="prod">
+            <img src="img/products/f4.jpg" alt="f1" />
+            <div class="description">
+              <span>adidas</span>
+              <h5>Cartoon Bollywood Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>INR 599</h4>
+            </div>
+            <a href="#"
+              ><svg
+                class="cart"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 576 512">
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #505258;
+                  }
+                </style>
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" /></svg
+            ></svg></a>
+          </div>
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For NewsLetter</h4>
+        <p>
+          Get latest updates about our new collections and
+          <span>special offers.</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your Email address" />
+        <button class="normal">Sign up</button>
+      </div>
+    </section>
+    <footer class="section-p1">
+      <div class="column">
+        <h3 class="logo">ShopaHolic</h3>
+        <h4>Contact</h4>
+        <p>
+          <span>Address: </span>ShopaHolic Headquarters, Jhansi UttarPradesh
+        </p>
+        <p><span>Phone: </span>9170500706, +0510123456</p>
+        <p><span>Timings</span>Mon-Sat, 09:00am to 07:00pm</p>
+        <div class="follow">
+          <h4>Follow</h4>
+          <div class="followicons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="column">
+        <h4>My Account</h4>
+        <a href="#">Sign in</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="column install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="" />
+          <img src="img/pay/play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="" />
+      </div>
+    </footer>
+
+    <script >
+
+    // Object containing Items
+let productslist = [
+{
+    id: 4,
+    title: "Women's Leather Biker Jacket",
+    price: 599,
+    description:
+      "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+    category: "Women's clothing",
+    image: "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+  },
+  {
+    id: 5,
+    title: "Women Jacket",
+    price: 599,
+    description:
+      "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
+    category: "Women's clothing",
+    image: "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+  },
+  {
+    id: 11,
+    title: "Women Overhood Coat",
+    price: 599,
+    description:
+      "95%Cotton,5%Spandex, Features,Long sleeve with hooded, adjustable drawstring waist design. The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+    category: "Women's clothing",
+    image: "https://m.media-amazon.com/images/I/61NGtyCS8sL._AC_UY1100_.jpg",
+  },
+  {
+    id: 12,
+    title: "Women Overhood Jacket",
+    price: 599,
+    description:
+      "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft Long sleeve with hooded, adjustable drawstring waist design.Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+    category: "Women's clothing",
+    image:
+      "https://images-cdn.ubuy.co.in/635d6cd31c8da04be10d4823-felgay-womens-zip-up-long-hoodie-jacket.jpg",
+  },
+];
+
+  // TO CHANGE THE MAIN IMAGE ON CLICK ON A SINGLE IMAGE IN SINGLE PRODUCT.HTML
+
+let mainimg = document.getElementById("mainimg");
+let smallimg = document.getElementsByClassName("smallimg");
+let smallimgtitle = document.querySelector(".smallimgtitle")
+let smallimgdesc = document.querySelector(".smallimgdesc")
+let quantityinp = document.querySelector(".quantityinp")
+let id;
+for (let i = 0; i < 4; i++) {
+  smallimg[i].onclick = function () {
+    mainimg.src = smallimg[i].src;
+    smallimgtitle.innerHTML= productslist[i].title
+    smallimgdesc.innerHTML = productslist[i].description
+    if(i==0)
+    id=4
+  else if(i==1)
+  {
+    id=5
+  }
+  else if(i==2)
+  {
+    id=11
+  }
+  else if(i==3){
+    id=12
+  }
+  };
+}
+
+  function handlefavourite(){
+    quantityinp.value=1
+    let title = smallimgtitle.innerHTML;
+    let image = mainimg.src
+    let quantity =quantityinp.value
+    let price = Number(599*quantity)
+        let prodetails=[];
+        let favoriteProducts;
+        if(localStorage.getItem("favoriteProducts")){     
+              favoriteProducts = JSON.parse(localStorage.getItem("favoriteProducts"));
+        }
+        else{
+             favoriteProducts= []
+        }
+       
+        
+        prodetails={id,title,price,image,quantity};
+        favoriteProducts.push(prodetails);
+        localStorage.setItem("favoriteProducts",JSON.stringify(favoriteProducts))
+
+    }
+
+    </script>
+</body>
+</html>

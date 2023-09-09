@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopaHolic</title>
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section id="header">
+      <a href="index.html"
+        ><img
+          class="logo"
+          src="https://cdn6.f-cdn.com/contestentries/315705/16938251/56851f0974f19_thumb900.jpg"
+          alt="logo"
+      /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="cartbag">
+            <a class="active" href="cart.html"
+              ><img
+                class="cartpic"
+                src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
+                alt="cart"
+            /></a>
+          </li>
+          <a href="#" id="close">X</a>
+        </ul>
+        <div id="mobile">
+          <a href="cart.html"
+            ><img
+              class="cartpic"
+              src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
+              alt="cart"
+          /></a>
+          <i id="hamburger" class="fas fa-outdent"></i>
+        </div>
+      </div>
+    </section>
+    <section id="shophero" class="cartheader">
+      <h2>#CartIT</h2>
+      <p>Add more products to get more offers</p>
+    </section>
+    <section id="cart" class="section-p1">
+      <table class="carttable">
+        <thead>
+          <tr>
+            <th>Remove</th>
+            <th>Image</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr>
+            <td>X</td>
+            <td><img src="img/products/f1.jpg" alt="" /></td>
+            <td>Name</td>
+            <td>INR 599</td>
+            <td>1</td>
+            <td>599</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="section-p1" id="cartadd">
+      <div class="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+          <input type="text" placeholder="Enter any Coupon Code" class="inp" />
+          <button class="normal couponbtn">Apply</button>
+        </div>
+      </div>
+      <div id="subtotal">
+        <h3>Cart Total</h3>
+        <table>
+          <tr>
+            <td>Cart Subtotal</td>
+            <td class="disptotal">INR 599</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Coupon</td>
+            <td class="couponno">No</td>
+          </tr>
+          <tr>
+            <td><strong>TOTAL</strong></td>
+            <td><strong class="disptotal">INR 599</strong></td>
+          </tr>
+        </table>
+        <button class="normal">Proceed To Checkout</button>
+      </div>
+    </section>
+    <footer class="section-p1">
+      <div class="column">
+        <h3 class="logo">ShopaHolic</h3>
+        <h4>Contact</h4>
+        <p>
+          <span>Address: </span>ShopaHolic Headquarters, Jhansi UttarPradesh
+        </p>
+        <p><span>Phone: </span>9170500706, +0510123456</p>
+        <p><span>Timings</span>Mon-Sat, 09:00am to 07:00pm</p>
+        <p><span>Mail: </span> sahu63754@gmail.com</p>
+        <div class="follow">
+          <h4>Follow</h4>
+          <div class="followicons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="column">
+        <h4>My Account</h4>
+        <a href="#">Sign in</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="column install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="" />
+          <img src="img/pay/play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="" />
+      </div>
+    </footer>
+
+    <script>
+      let favoriteProducts = [];
+      let remove;
+      function handlefavourite() {
+        if (localStorage.getItem("favoriteProducts")) {
+          favoriteProducts = JSON.parse(
+            localStorage.getItem("favoriteProducts")
+          );
+        } else {
+          favoriteProducts = [];
+        }
+        if (favoriteProducts.length > 0) {
+          showdetails();
+        }
+      }
+      function handleremove(id) {
+        if (favoriteProducts) {
+          let newfavoriteProducts = favoriteProducts.filter((edata) => {
+            return edata.id != id;
+          });
+          localStorage.setItem(
+            "favoriteProducts",
+            JSON.stringify(newfavoriteProducts)
+          );
+          favoriteProducts = newfavoriteProducts;
+          showdetails();
+        }
+      }
+      function showdetails() {
+        let tbody = document.querySelector(".tbody");
+        tbody.innerHTML = "";
+        favoriteProducts.map((e) => {
+          tbody.innerHTML += ` <tr>
+            <td id=${e.id} class="removeitem">X</td>
+            <td><img src="${e.image}" alt="" /></td>
+            <td>${e.title}</td>
+            <td>INR 599</td>
+            <td>${e.quantity}</td>
+            <td>${e.price}</td>
+          </tr>`;
+        });
+        remove = document.getElementsByClassName("removeitem");
+        for (let i = 0; i < remove.length; i++) {
+          remove[i].addEventListener("click", () => {
+            handleremove(remove[i].id);
+          });
+          handledisptotal();
+        }
+      }
+      function handledisptotal() {
+        let total = 0;
+        let original;
+        favoriteProducts.map((e) => {
+          total += e.price;
+        });
+        let tdtotal = document.querySelectorAll(".disptotal");
+        tdtotal[0].innerHTML = `INR ${total}`;
+        tdtotal[1].innerHTML = `INR ${total}`;
+        original = total;
+        let coupbtn = document.querySelector(".couponbtn");
+        coupbtn.addEventListener("click", () => {
+          let inpcode = document.querySelector(".inp");
+          let couponcode = inpcode.value;
+          if (couponcode.length > 1) {
+            let couponno = document.querySelector(".couponno");
+            couponno.innerHTML = "25%";
+            total = original - original * 0.2;
+            tdtotal[0].innerHTML = `INR ${total}`;
+            tdtotal[1].innerHTML = `INR ${total}`;
+          } else {
+            let couponno = document.querySelector(".couponno");
+            couponno.innerHTML = "No";
+            tdtotal[0].innerHTML = `INR ${original}`;
+            tdtotal[1].innerHTML = `INR ${original}`;
+          }
+        });
+      }
+
+      handlefavourite();
+    </script>
+  </body>
+</html>
