@@ -137,7 +137,7 @@ button.white {
 /* STYLING OF SECTIONs */
 
 #hero {
-  background-image: url("img/hero4.png");
+  background-image: url("img/Hero4.png");
   height: 90vh;
   width: 100%;
   background-position: top 25% right 0%;
@@ -155,7 +155,7 @@ button.white {
   color: #088178;
 }
 #hero button {
-  background-image: url("img/button.png");
+  background-image: url("img/Button.png");
   background-color: transparent;
   color: #088178;
   border: 0;
@@ -299,7 +299,7 @@ button.white {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background-image: url("img/banner/b2.jpg");
+  background-image: url("img/Banner/B2.jpg");
   width: 95%;
   height: 45vh;
   background-size: cover;
@@ -333,7 +333,7 @@ button.white {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background-image: url("img/banner/b17.jpg");
+  background-image: url("img/banner/B17.jpg");
   min-width: 580px;
   height: 50vh;
   background-size: cover;
@@ -341,7 +341,7 @@ button.white {
   padding: 30px;
 }
 #sm-banner .bannerbox:nth-child(2) {
-  background-image: url("img/banner/b10.jpg");
+  background-image: url("img/banner/B10.jpg");
 }
 #sm-banner h4 {
   color: white;
@@ -375,7 +375,7 @@ button.white {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background-image: url("img/banner/b7.jpg");
+  background-image: url("img/banner/B7.jpg");
   min-width: 30%;
   height: 30vh;
   background-size: cover;
@@ -394,17 +394,17 @@ button.white {
   font-size: 15px;
 }
 #threebanners .bannerbox:nth-child(2) {
-  background-image: url("img/banner/b4.jpg");
+  background-image: url("img/banner/B4.jpg");
 }
 #threebanners .bannerbox:nth-child(3) {
-  background-image: url("img/banner/b18.jpg");
+  background-image: url("img/banner/B18.jpg");
 }
 #newsletter {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-image: url("img/banner/b14.png");
+  background-image: url("img/banner/B14.png");
   background-repeat: no-repeat;
   background-position: top 20% left 30%;
   background-color: #041e42;
@@ -499,7 +499,7 @@ footer a:hover {
 
 /* SHOP CSS */
 #shophero {
-  background-image: url("img/banner/b1.jpg");
+  background-image: url("img/banner/B1.jpg");
   height: 40vh;
   width: 100%;
   background-size: cover;
@@ -596,7 +596,7 @@ footer a:hover {
 /* BLOG PAGE */
 
 #shophero.blogheader {
-  background-image: url("img/banner/b19.jpg");
+  background-image: url("img/banner/B19.jpg");
   height: 70vh;
 }
 #blog {
@@ -644,7 +644,7 @@ footer a:hover {
 ABOUT PAGE */
 
 #shophero.aboutheader {
-  background-image: url("img/about/banner.png");
+  background-image: url("img/about/Banner.png");
 }
 #abouthead {
   display: flex;
