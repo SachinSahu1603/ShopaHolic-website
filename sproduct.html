@@ -360,7 +360,7 @@ for (let i = 0; i < 4; i++) {
 }
 
   function handlefavourite(){
-    quantityinp.value=1
+    
     let title = smallimgtitle.innerHTML;
     let image = mainimg.src
     let quantity =quantityinp.value
@@ -378,6 +378,7 @@ for (let i = 0; i < 4; i++) {
         prodetails={id,title,price,image,quantity};
         favoriteProducts.push(prodetails);
         localStorage.setItem("favoriteProducts",JSON.stringify(favoriteProducts))
+    quantityinp.value=1
 
     }
 
